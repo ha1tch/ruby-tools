@@ -8,7 +8,9 @@ module Lookupable
                 return record[returnindex] 
             end                    
         }
-        return nil
+        return nil # This has been described as "ugly", as return nil is implicit
+                   # but I still prefer my returns to be stated explicitly
+                   # (even if non-idiomatic) for the purposes of communication.
     end
 end
 class Array
